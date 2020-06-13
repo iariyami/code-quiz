@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- Links css stylesheet to html page -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Title of Page -->
+    <title>Coding Quiz</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <!-- Button to begin quiz -->
+      <div id="start">Start Quiz!</div>
+
+      <!-- Message after Quiz is Complete -->
+      <div id="quizDone" style="display: none;">
+        Quiz Over!
+      </div>
+
+      <div id="quiz" style="display: none;">
+        <!-- Current Question in sequence following javascript order -->
+        <div id="question"></div>
+
+        <!-- Displays answer choices in js for current question -->
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <!-- Displaying timer in the bottom right of the page -->
+
+        <div id="timer">
+          <div id="counter"></div>
+          <div id="bTimeGauge"></div>
+          <div id="timeGauge"></div>
+        </div>
+
+        <!-- Moves on to the next question in the quiz -->
+        <div id="progress"></div>
+      </div>
+    </div>
+
+    <!-- Links javascript file to html page -->
+    <script src="script.js"></script>
+  </body>
 </html>

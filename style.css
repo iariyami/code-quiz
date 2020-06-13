@@ -1,0 +1,32 @@
+/* Formatting text for the entire page */
+body {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+/* Bolding the text of the question */
+#question {
+  font-weight: bold;
+}
+
+/* Placing the text in on the right side of the page */
+#timer {
+  float: right;
+  text-decoration: solid;
+  box-sizing: border-box;
+}
+
+/* Places the answer choices in a box */
+#choices {
+  -moz-box-align: center;
+  width: 300px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 50px;
+}
+
+/* Centers the choices within the box */
+.choice {
+  text-align: center;
+}
